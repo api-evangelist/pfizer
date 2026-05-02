@@ -1,5 +1,5 @@
 # Pfizer (pfizer)
-Pfizer is a Fortune 500 company. This repository captures the APIs, developer tools, and machine-readable API artifacts for Pfizer.
+Pfizer is a Fortune 500 American multinational pharmaceutical and biotechnology corporation that researches, develops, and manufactures medicines and vaccines. This repository captures the APIs, developer tools, and machine-readable API artifacts for Pfizer.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/pfizer/refs/heads/main/apis.yml)
 
@@ -16,7 +16,7 @@ Pfizer is a Fortune 500 company. This repository captures the APIs, developer to
 ## Timestamps
 
 - **Created:** 2026-03-21
-- **Modified:** 2026-03-21
+- **Modified:** 2026-04-28
 
 ## APIs
 
