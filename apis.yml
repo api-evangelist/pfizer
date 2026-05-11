@@ -6,7 +6,13 @@ apis: []
 common:
   - type: Website
     url: https://www.pfizer.com
+  - type: Integrations
+    url: https://www.pfizer.com/about/partners/research-and-business-development-partnerships
 description: >-
   Pfizer is a Fortune 500 American multinational pharmaceutical and biotechnology
   corporation that researches, develops, and manufactures medicines and vaccines
   for a wide range of medical disciplines.
+integrations:
+  - name: Pfizer
+  - name: banner
+  - name: Partnering With models getty image
