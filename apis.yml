@@ -1,4 +1,6 @@
 aid: pfizer
+tags:
+  - Fortune 100
 url:
   https://raw.githubusercontent.com/api-evangelist/pfizer/refs/heads/main/apis.yml
 modified: '2026-04-28'
