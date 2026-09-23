@@ -1,7 +1,9 @@
 ---
 title: A New Consumer Digital Product Providing Answers You ...
 url: https://www.pfizer.com/news/articles/introducing_health_answers_pfizer_new_consumer_digital_product_providing_answers
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Pfizer" press release artificial intelligence'
 position: 1
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: 'Accelerating Innovation: Pfizer''s 2025 AI Festival'
 url: https://www.pfizer.com/news/articles/accelerating_innovation_pfizers_2025_ai_festival
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Pfizer" press release artificial intelligence'
 position: 3
 source: serpapi-google

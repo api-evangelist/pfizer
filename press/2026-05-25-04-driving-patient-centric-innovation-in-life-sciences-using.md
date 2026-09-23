@@ -1,7 +1,9 @@
 ---
 title: Driving Patient-Centric Innovation in Life Sciences Using ...
 url: https://aws.amazon.com/solutions/case-studies/pfizer-PACT-case-study/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Pfizer" press release artificial intelligence'
 position: 4
 source: serpapi-google

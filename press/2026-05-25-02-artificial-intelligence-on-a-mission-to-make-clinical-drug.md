@@ -1,7 +1,9 @@
 ---
 title: 'Artificial Intelligence: On a mission to Make Clinical Drug ...'
 url: https://www.pfizer.com/news/articles/artificial_intelligence_on_a_mission_to_make_clinical_drug_development_faster_and_smarter
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Pfizer" press release artificial intelligence'
 position: 2
 source: serpapi-google
