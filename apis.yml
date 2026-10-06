@@ -28,9 +28,11 @@ tags:
   - Fortune 100
 url:
   https://raw.githubusercontent.com/api-evangelist/pfizer/refs/heads/main/apis.yml
-modified: '2026-04-28'
+modified: '2026-10-06'
 apis: []
 common:
+  - url: https://www.pfizer.com/rss.xml
+    type: BlogRSS
   - type: DomainSecurity
     url: security/pfizer-domain-security.yml
   - type: GitHubOrganization
