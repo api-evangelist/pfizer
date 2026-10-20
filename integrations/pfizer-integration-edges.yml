@@ -1,0 +1,77 @@
+edges:
+- partner_name: FDA CBER (approved cellular and gene therapy products)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/beqvez
+  category: Approved cell / gene therapy product
+  contract_reference:
+    register: FDA Approved Cellular and Gene Therapy Products (fda.gov, CBER)
+    standard: FDA biologics license (cellular and gene therapy products)
+    role: approved-cgt-manufacturer
+    spec_file: null
+    registered_name: Pfizer, Inc.
+    matched_domain: pfizer.com
+    matched_by: domain
+    certified_products:
+    - product: gene therapy (viral or non-viral vector) (FDA approval)
+      product_type: gene therapy (viral or non-viral vector)
+      lapsed: false
+      products_sample:
+      - BEQVEZ (fidanacogene elaparvovec-dzkt)
+    signal_note: certified_products = one entry per approved PRODUCT TYPE, never per product; lapsed when every
+      product of the type is withdrawn / not authorised. Products are context, never counted
+    detected_by: sweep-cell-gene-therapy.py
+    detected: '2026-10-20'
+    identity: wikidata Q206921 'Pfizer' P856 https://www.pfizer.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-cell-gene-therapy.py
+  first_seen: '2026-10-20'
+- partner_name: ClinicalTrials.gov (cell / gene therapy trial sponsors)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://clinicaltrials.gov/study/NCT05689164
+  category: Interventional cell / gene therapy trial sponsor
+  contract_reference:
+    register: ClinicalTrials.gov API v2 (interventional, industry lead sponsor, cell/gene therapy interventions)
+    standard: null
+    spec_file: null
+    role: cgt-trial-lead-sponsor
+    registered_name: Pfizer
+    matched_domain: pfizer.com
+    matched_by: domain
+    active_trial: true
+    latest_start: '2023-03-13'
+    trials_sample:
+    - NCT05689164
+    - NCT05429372
+    - NCT04281485
+    - NCT04370054
+    - NCT03861273
+    signal_note: 'PARTICIPATION only (a trial is not an approval): active_trial and latest_start are per-edge signals;
+      the number of trials is never counted'
+    detected_by: sweep-cell-gene-therapy.py
+    detected: '2026-10-20'
+    identity: wikidata Q206921 'Pfizer' P856 https://www.pfizer.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-cell-gene-therapy.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products
+- https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
+- https://clinicaltrials.gov/api/v2/studies
+- https://members.alliancerm.org/Online/Directory/Member-Directory.aspx?WebsiteKey=0a8f86de-1bef-4044-be59-e2f7f1c52e39
+checked:
+- https://clinicaltrials.gov/api/v2/studies
+- https://members.alliancerm.org/Online/Directory/Member-Directory.aspx?WebsiteKey=0a8f86de-1bef-4044-be59-e2f7f1c52e39
+- https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
+- https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products
