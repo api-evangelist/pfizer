@@ -67,3 +67,159 @@
     identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null
+- slug: pfizer-fda-drugs-fda-approved-drug-and-biologic-applications
+  label: FDA Drugs@FDA (approved drug and biologic applications)
+  partner_name: FDA Drugs@FDA (approved drug and biologic applications)
+  category: FDA drug / biologic application holder
+  type: contract
+  channel: regulator-register
+  evidence: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017442
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Drugs@FDA (openFDA drug/drugsfda; application holder = sponsor_name)
+    standard: FDA drug / biologic marketing application (21 CFR 314 / 601)
+    spec_file: null
+    role: fda-application-holder
+    registered_name: PFIZER
+    matched_domain: pfizer.com
+    matched_by: domain
+    certified_products:
+    - product: Abbreviated New Drug Application (generic, approved) (Drugs@FDA)
+      product_type: ANDA
+      lapsed: false
+      products_sample:
+      - ADRIAMYCIN PFS
+      - CEFOBID
+      - CLEOCIN
+      - CLEOCIN PHOSPHATE
+      - DEPO-ESTRADIOL
+      - DEPO-TESTOSTERONE
+    - product: Biologics License Application (approved) (Drugs@FDA)
+      product_type: BLA
+      lapsed: false
+      products_sample:
+      - ABRILADA
+      - ELELYSO
+      - ELREXFIO
+      - HYMPAVZI
+      - IXIFI
+      - RUXIENCE
+    - product: New Drug Application (approved) (Drugs@FDA)
+      product_type: NDA
+      lapsed: false
+      products_sample:
+      - ALDACTAZIDE
+      - ALDACTONE
+      - AROMASIN
+      - ARTHROTEC
+      - ATARAX
+      - AZULFIDINE
+    applications_sample:
+    - ANDA060657
+    - ANDA062644
+    - ANDA062803
+    - ANDA083220
+    - ANDA085470
+    signal_note: certified_products = one entry per application TYPE (NDA / ANDA / BLA), never per application;
+      lapsed when every product under the type is Discontinued. Applications are context, never counted
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q206921 'Pfizer' P856 https://www.pfizer.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    other_registrations:
+    - PFIZER INC
+  status: not-a-workflow
+  arazzo: null
+- slug: pfizer-clinicaltrials-gov-industry-trial-sponsors-and-collaborators
+  label: ClinicalTrials.gov (industry trial sponsors and collaborators)
+  partner_name: ClinicalTrials.gov (industry trial sponsors and collaborators)
+  category: Interventional trial sponsor / collaborator
+  type: register
+  channel: standard-directory
+  evidence: https://clinicaltrials.gov/study/NCT07823595
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: ClinicalTrials.gov API v2 (interventional, started >= 2021-01-01, industry lead sponsor or collaborator)
+    standard: null
+    spec_file: null
+    role: trial-collaborator+lead-sponsor
+    registered_name: Pfizer
+    matched_domain: pfizer.com
+    matched_by: domain
+    lead_sponsor: true
+    active_trial: true
+    latest_start: '2027-05-01'
+    trials_sample:
+    - NCT07823595
+    - NCT07647432
+    - NCT07782450
+    - NCT07846683
+    - NCT07768358
+    signal_note: 'PARTICIPATION only (a trial is not an approval): lead_sponsor, active_trial and latest_start are
+      per-edge signals; the number of trials is never counted'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q206921 'Pfizer' P856 https://www.pfizer.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  status: not-a-workflow
+  arazzo: null
+- slug: pfizer-eu-ctis-clinical-trial-sponsors
+  label: EU CTIS (clinical trial sponsors)
+  partner_name: EU CTIS (clinical trial sponsors)
+  category: EU clinical trial sponsor
+  type: register
+  channel: standard-directory
+  evidence: https://euclinicaltrials.eu/ctis-public/view/2026-525612-34-00
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: EU Clinical Trials Information System public search (euclinicaltrials.eu, sponsorType 'Pharmaceutical
+      company')
+    standard: null
+    spec_file: null
+    role: eu-trial-sponsor
+    registered_name: Pfizer Inc.
+    matched_domain: pfizer.com
+    matched_by: domain
+    trials_sample:
+    - 2026-525612-34-00
+    - 2026-525797-19-00
+    - 2026-526260-21-00
+    - 2025-523445-10-00
+    - 2025-524387-38-00
+    signal_note: 'PARTICIPATION only: a CTIS sponsor listing; the number of trials is never counted'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q206921 'Pfizer' P856 https://www.pfizer.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  status: not-a-workflow
+  arazzo: null
+- slug: pfizer-cdisc-members
+  label: CDISC (members)
+  partner: cdisc
+  partner_name: CDISC (members)
+  category: Clinical data standards member
+  type: register
+  channel: standard-directory
+  evidence: https://www.cdisc.org/company/pfizer
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CDISC member search (cdisc.org/members/search + public company page website)
+    standard: CDISC clinical data standards (SDTM / ADaM / CDASH / ODM)
+    spec_file: null
+    role: cdisc-member
+    registered_name: Pfizer
+    register_id: pfizer
+    member_industry: Pharmaceutical
+    listed_website: http://www.pfizer.com/
+    matched_domain: pfizer.com
+    matched_by: domain
+    signal_note: 'self-filed paid membership: listing alone = standard-participant (standards adopter); partner_tier
+      is the membership level, never weighted as a tier; hand-reviewed'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null
